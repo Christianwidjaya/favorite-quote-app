@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LibraryPage } from '../library/library';
+import { FavoritesPage } from '../favorites/favorites';
 
 /**
  * Generated class for the TabsPage page.
@@ -11,10 +13,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-tabs',
-  templateUrl: 'tabs.html',
+  templateUrl: 'tabs.html'
 })
 export class TabsPage {
-
+  libraryPage = LibraryPage;
+  favoritesPage = FavoritesPage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
